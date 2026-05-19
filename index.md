@@ -186,6 +186,15 @@ description: Senior leader driving end-to-end transformation, operational excell
       </div>
     </a>
 
+    <a class="project-card reveal" href="https://github.com/arjkul/Claudemeter" target="_blank">
+      <span class="project-type">Desktop Widget</span>
+      <h3 class="project-name">ClaudeMeter</h3>
+      <p class="project-desc">Real-time Claude API usage monitor for Windows — displays 5-hour session and 7-day quota limits with countdown timers and visual progress rings. Built with Rainmeter and PowerShell.</p>
+      <div class="tag-list">
+        <span class="tag">Rainmeter</span><span class="tag">Claude API</span><span class="tag">PowerShell</span><span class="tag">Lua</span><span class="tag">Dashboard</span><span class="tag">Widget</span>
+      </div>
+    </a>
+
     <a class="project-card reveal" href="https://github.com/arjkul/warehouse-ops-intelligence" target="_blank">
       <span class="project-type">B2B Operations</span>
       <h3 class="project-name">Warehouse Ops Intelligence</h3>
