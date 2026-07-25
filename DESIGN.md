@@ -1,134 +1,81 @@
-# Design System — Anthropic Theme
+# Design System — Organic Theme
 
 ## Color Tokens
 
 ### Primary Colors
-- **Dark**: `#141413` — Primary background, text on light
-- **Light**: `#faf9f5` — Light backgrounds, fallback text color
-- **Text Dark**: `#141413` — Primary text color on light backgrounds
+- **Background**: `#f5ead8` — warm cream, page background
+- **Surface**: `#ebddc5` — cards, table rows, secondary panels
+- **Text**: `#201e1d` — primary text on light backgrounds
+- **Divider**: `color-mix(in srgb, #201e1d 16%, transparent)`
 
-### Neutral Palette
-- **Mid Gray**: `#b0aea5` — Secondary text, muted UI
-- **Light Gray**: `#e8e6dc` — Borders, subtle backgrounds
-- **Border**: `#e8e6dc` — Consistent border color
+### Accent — Terracotta (primary CTA, kickers, links)
+`100` `#fff2eb` · `200` `#ffe1d0` · `300` `#ffc6a5` · `400` `#f6a06b` · `500` `#d67f48` (`--color-accent`: `#c67139`) · `600` `#b2622d` · `700` `#8c491a` · `800` `#643312` · `900` `#402310`
 
-### Accent Colors (Rotate by Section)
-- **Orange**: `#d97757` — Experience section, primary CTA
-- **Blue**: `#6a9bcc` — Projects section, secondary actions
-- **Green**: `#788c5d` — Skills section, tertiary actions
+### Accent 2 — Olive (secondary stats, education tags)
+`100` `#f0fae1` · `200` `#e1eecc` · `300` `#ccdbb2` · `400` `#aebf92` · `500` `#8fa073` (`--color-accent-2`: `#7a8a5e`) · `600` `#728157` · `700` `#56633f` · `800` `#3d472b` · `900` `#272e1b`
+
+### Neutral Ramp
+`100` `#f9f4ed` · `200` `#eee7db` · `300` `#dcd3c4` · `400` `#c0b6a5` · `500` `#a19786` · `600` `#82796a` · `700` `#645c50` · `800` `#474238` · `900` `#2e2b25`
 
 ## Typography
 
-### Headings
-- **Font Family**: Poppins (Arial fallback)
-- **Weights**: Bold (700) for primary headings, Regular (400) for secondary
-- **Sizes**: 24pt+ per Anthropic guidelines
-- **Color**: `#141413` (dark) for all headings
+- **Headings**: Caprasimo (system-ui fallback), weight 400 only — the display font carries the personality, so headings never go bold.
+- **Body**: Figtree, weights 400/600/700.
+- **Base size**: 15px, line-height 1.55. Hero H1 scales `clamp(38px, 5.4vw, 68px)`, section H2 `clamp(28px, 3vw, 40px)`.
 
-### Body Text
-- **Font Family**: Lora (Georgia fallback)
-- **Weight**: Regular (400)
-- **Size**: 16pt base (min 11pt for accessibility)
-- **Color**: `#141413` (dark) on light backgrounds
-- **Line Height**: 1.8 for readability
+## Spacing & Radius
 
-### Monospace (UI/Labels)
-- **Font Family**: System monospace or Arial (fallback)
-- **Use**: Labels, tags, small UI text
+- Scale: `--space-1` 4.4px through `--space-8` 35.2px (4.4px base unit).
+- Radius: `--radius-sm` 8px, `--radius-md` 16px, `--radius-lg` 28px. Cards and the contact panel round further to `radius-lg * 1.15`; buttons, tags, and inputs go full pill (`999px`).
 
-## Spacing Scale
+## Elevation
 
-### Vertical Spacing
-- **Section padding**: 48px top/bottom (desktop), 32px (tablet), 16px (mobile)
-- **List item padding**: 24px vertical, 0 horizontal
-- **Gap between items**: 1rem
-
-### Responsive Breakpoints
-- **Desktop**: 1024px+ (3px accent borders, 48px padding)
-- **Tablet**: 768–1023px (3px accent borders, 32px padding)
-- **Mobile**: 375–767px (2px accent borders, 16px padding, hamburger nav)
+- `--shadow-sm` / `--shadow-md` / `--shadow-lg` — soft ink-tinted shadows (`color-mix` against `#2e2b25`), no hard black shadows.
 
 ## Component Patterns
 
-### Section Accents
-- **Accent Border**: 3px (desktop) or 2px (mobile) left border in section's assigned color
-- **Purpose**: Visual organization, not decoration
-- **Application**: Experience (orange), Projects (blue), Skills (green)
+### Buttons
+- `.btn-primary` — solid accent fill, cream text. Primary CTA only (Email me, resume actions).
+- `.btn-secondary` — outlined with divider color.
+- `.btn-ghost` — text-only accent, used for "view all" style links.
 
-### Interactive Elements
-- **Links**: Color matches section accent
-- **Hover**: Underline appears on hover
-- **Focus**: Visible 2px outline/ring (WCAG AA minimum)
-- **Touch targets**: Minimum 44px on mobile
+### Cards
+- `.card` — surface background, `radius-lg * 1.15`, no border. Elevation via `.elev-sm`/`.elev-md`/`.elev-lg`, not borders.
+- Project cards lift on hover (`translateY(-4px)` + `shadow-lg`).
 
-### Lists & Cards
-- **Format**: Linear list layout (no cards for portfolio items)
-- **Dividers**: Subtle line between items
-- **Density**: Generous vertical spacing, left-aligned
-- **Accents**: Left border only, no background fills
+### Tags
+- Pill-shaped, 11px, no border by default. `.tag-neutral` / `.tag-accent-2` for filled variants, `.tag-outline` for outlined (used on project cards).
 
-### Contact Section
-- **Desktop**: Inline layout (email, phone, LinkedIn in row)
-- **Mobile**: Stacked layout (single column)
-- **Alignment**: Centered
-- **Responsive**: Switch at 768px breakpoint
+### Stats
+- Circular (`aspect-ratio: 1/1`, `border-radius: 999px`) tiles alternating accent/accent-2 tints — not cards.
+
+### Navigation
+- Sticky top nav, translucent cream background with `backdrop-filter: blur(6px)`. No border; separation comes from the blur + slight opacity shift on scroll.
+
+## Motion
+
+- `revealUp`, `heroFade` on section/hero entrance; `glowPulse` and `floatSlow` on decorative background blobs.
+- All animation disabled under `prefers-reduced-motion: reduce`; `html { scroll-behavior: smooth }` for anchor nav, also disabled under reduced motion.
 
 ## Accessibility
 
-### Color Contrast
-- Dark (#141413) on light (#faf9f5): **17:1 ratio** (WCAG AAA)
-- Meets all accessibility standards
+- Text/background contrast: `#201e1d` on `#f5ead8` exceeds WCAG AAA.
+- `:focus-visible` gets a 2px accent outline; default `:focus` is suppressed only where a visible alternative exists.
+- Semantic landmarks: `<nav>`, `<section id="...">` per content block, heading hierarchy h1 → h2 → h3.
 
-### Keyboard Navigation
-- All interactive elements keyboard-accessible
-- Links/buttons: visible focus ring (2px minimum)
-- Tab order: logical, top-to-bottom
+## Responsive
 
-### Semantic HTML
-- `<h1>`: Page title (hero name)
-- `<h2>`: Section headings (Experience, Projects, Skills)
-- `<h3>`: Subsection headings (role titles)
-- ARIA landmarks on major sections
-
-### Touch Targets
-- Minimum 44px height/width on mobile
-- Adequate spacing between interactive elements
-- No small, hard-to-tap buttons
-
-## Mobile Navigation
-
-### Sticky Mobile Nav
-- Fixed position at top (mobile 375px+)
-- Hamburger icon triggers menu
-- Menu items: links to sections (Experience, Projects, Skills, Contact)
-- Smooth scroll to anchor links
-- Background: semi-transparent dark with blur
-
-## Visual Hierarchy
-
-### Hero Section
-1. **Primary**: Name (largest, Poppins Bold)
-2. **Secondary**: Headline (smaller, Poppins Regular)
-3. **Tertiary**: Metrics in accent color boxes
-
-### Section Structure
-1. **Primary**: Section title (h2, Poppins Bold, dark)
-2. **Secondary**: Item titles (h3, Poppins Regular)
-3. **Tertiary**: Descriptions & details (Lora, body text)
-4. **Accent**: Tags, categories (orange/blue/green left border)
+- Single breakpoint at 800px: hero grid, stats grid, stack education/certifications columns, and the contact panel all collapse to one column; hero photo shrinks to 160px.
 
 ## Font Fallback Chain
 
 ```
-Headings:  Poppins, Arial, sans-serif
-Body:      Lora, Georgia, serif
-Monospace: 'Courier New', monospace
+Headings: Caprasimo, system-ui, sans-serif
+Body:     Figtree, system-ui, sans-serif
 ```
-
-Ensures consistent rendering across all browsers and systems.
 
 ---
 
-**Version**: 1.0  
-**Last Updated**: May 14, 2026  
-**Theme**: Anthropic Brand Guidelines
+**Version**: 2.0
+**Last Updated**: July 24, 2026
+**Theme**: Organic (imported from Claude Design — "Arjun Kulshreshtha Landing")
