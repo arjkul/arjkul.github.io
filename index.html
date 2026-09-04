@@ -4,569 +4,507 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arjun Kulshreshtha — Strategy &amp; Business Operations</title>
-<meta name="description" content="Strategy leader who ships what they design — $20M+ in cost savings and an AI-native builder across logistics, e-commerce, and supply chain.">
+<meta name="description" content="Strategy leader who ships what gets built — $20M+ in cost savings and an AI-native builder across logistics, e-commerce, and supply chain.">
 <meta property="og:title" content="Arjun Kulshreshtha — Strategy &amp; Business Operations">
-<meta property="og:description" content="Strategy leader who ships what they design — $20M+ in cost savings and an AI-native builder across logistics, e-commerce, and supply chain.">
+<meta property="og:description" content="Strategy leader who ships what gets built — $20M+ in cost savings and an AI-native builder across logistics, e-commerce, and supply chain.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://arjkul.github.io/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%234a1942%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%23faf7f1%22 font-family=%22Georgia,serif%22>A</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
 :root {
   --color-bg: #faf7f1;
-  --color-surface: #ffffff;
   --color-text: #1d1a1e;
   --color-accent: #4a1942;
-  --color-divider: color-mix(in srgb, #1d1a1e 12%, transparent);
-
-  --color-neutral-100: #f2eee7;
-  --color-neutral-200: #e9e3d8;
-  --color-neutral-800: #3a3640;
-
-  --color-accent-100: color-mix(in srgb, #4a1942 6%, white);
-  --color-accent-200: color-mix(in srgb, #4a1942 14%, white);
-  --color-accent-300: color-mix(in srgb, #4a1942 28%, white);
-  --color-accent-600: color-mix(in srgb, #4a1942 85%, black);
-  --color-accent-700: #4a1942;
-
   --color-accent-2: #8a6d2f;
-  --color-accent-2-100: color-mix(in srgb, #8a6d2f 8%, white);
-  --color-accent-2-200: color-mix(in srgb, #8a6d2f 18%, white);
-  --color-accent-2-700: color-mix(in srgb, #8a6d2f 85%, black);
+  --color-divider: color-mix(in srgb, #1d1a1e 10%, transparent);
+  --color-divider-soft: color-mix(in srgb, #1d1a1e 8%, transparent);
+  --color-muted: color-mix(in srgb, #1d1a1e 62%, transparent);
+  --color-muted-soft: color-mix(in srgb, #1d1a1e 45%, transparent);
 
-  --font-heading: "Lora", Georgia, serif;
-  --font-heading-weight: 500;
-  --font-body: "Inter", system-ui, sans-serif;
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
 
-  --space-1: 4.4px;
-  --space-2: 8.8px;
-  --space-3: 13.2px;
-  --space-4: 17.6px;
-  --space-6: 26.4px;
-  --space-8: 35.2px;
-
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-
-  --shadow-sm: 0 1px 2px color-mix(in srgb, #1d1a1e 10%, transparent);
-  --shadow-md: 0 6px 16px color-mix(in srgb, #1d1a1e 12%, transparent);
-  --shadow-lg: 0 16px 36px color-mix(in srgb, #1d1a1e 16%, transparent);
+  --measure: 1180px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-body { margin: 0; font-size: 15px; line-height: 1.55; font-weight: 400; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 var(--space-2);
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; font-size: 16px; line-height: 1.55; font-weight: 400;
+  background: var(--color-bg); color: var(--color-text); font-family: var(--font-body);
+  overflow-x: clip; text-wrap: pretty;
 }
-p { margin: 0 0 var(--space-3); }
-a { color: var(--color-accent); text-underline-offset: 3px; }
-a:hover { color: var(--color-accent-600); }
-img { display: block; max-width: 100%; }
-figure { margin: 0; }
+h1, h2, h3, h4 {
+  font-family: var(--font-heading); font-weight: 500;
+  line-height: 1.1; letter-spacing: -0.012em; margin: 0;
+}
+p { margin: 0; }
+a { color: inherit; text-decoration-color: color-mix(in srgb, var(--color-accent) 45%, transparent); text-underline-offset: 4px; }
+a:hover { text-decoration-color: currentColor; }
 :focus { outline: none; }
-:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
 ::selection { background: color-mix(in srgb, var(--color-accent) 22%, transparent); }
 
-.btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-  cursor: pointer; text-decoration: none;
-  font-family: var(--font-body); font-weight: 600;
-  font-size: 14px; line-height: 1.2; color: var(--color-text);
-  background: #fff; border: 1px solid transparent;
-  padding: 11px 20px; border-radius: 10px;
+.label {
+  font-size: 12px; letter-spacing: 0.09em; text-transform: uppercase; font-weight: 600;
+  color: var(--color-accent);
 }
-.btn-primary { background: var(--color-accent); color: #fff; }
-.btn-primary:hover { background: var(--color-accent-600); }
-.btn-primary:active { background: var(--color-accent-700); }
-.btn-secondary { border-color: var(--color-divider); color: var(--color-text); background: #fff; }
-.btn-secondary:hover { background: color-mix(in srgb, var(--color-text) 5%, transparent); }
-.btn-secondary:active { background: color-mix(in srgb, var(--color-text) 10%, transparent); }
-.btn-ghost { color: var(--color-accent); padding-inline: 4px; background: transparent; }
-.btn-ghost:hover { background: color-mix(in srgb, var(--color-accent) 8%, transparent); }
-.btn-ghost:active { background: color-mix(in srgb, var(--color-accent) 16%, transparent); }
+.link { color: var(--color-accent); text-decoration: underline; text-decoration-thickness: 1px; }
+.link:hover { color: color-mix(in srgb, var(--color-accent) 78%, black); }
+.link-primary { font-weight: 600; }
+.link-arrow { display: inline-flex; align-items: center; gap: 7px; }
+.link-arrow svg { transition: transform .2s ease; }
+.link-arrow:hover svg { transform: translateX(3px); }
 
-.card {
-  display: flex; flex-direction: column; gap: var(--space-2);
-  background: var(--color-surface); border: 1px solid var(--color-divider);
-  border-radius: var(--radius-md); padding: 28px 32px; box-shadow: var(--shadow-sm);
+.wrap { max-width: var(--measure); margin: 0 auto; padding: 0 clamp(24px, 5vw, 72px); }
+:root { --section-gap: clamp(64px, 9vw, 112px); --head-gap: clamp(28px, 4vw, 44px); }
+
+/* ---- grain texture: one deliberate atmospheric touch, not repeated anywhere else ---- */
+.grain {
+  position: fixed; inset: 0; z-index: 60; pointer-events: none;
+  opacity: 0.05; mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
 }
-.card-kicker { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); }
-.card-title { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 17px; line-height: 1.2; }
-.card-body { margin: 0; font-size: 13px; opacity: 0.8; flex: 1; }
-.card-meta { display: flex; align-items: center; gap: 6px; font-size: 11px; color: color-mix(in srgb, var(--color-text) 50%, transparent); }
 
-.tag { display: inline-flex; align-items: center; font-size: 11px; letter-spacing: 0.02em; padding: 3px 10px; border-radius: 999px; }
-.tag-accent-2 { background: var(--color-accent-100); color: var(--color-accent-700); }
-.tag-neutral { background: var(--color-neutral-100); color: var(--color-neutral-800); }
-.tag-outline { border: 1px solid var(--color-accent); color: var(--color-accent); }
+/* ---- nav ---- */
+.nav {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--color-bg) 90%, transparent);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid transparent;
+}
+.nav-inner {
+  display: flex; align-items: center; gap: clamp(18px, 3vw, 34px);
+  max-width: var(--measure); margin: 0 auto;
+  padding: 22px clamp(24px, 5vw, 72px);
+}
+.nav.is-scrolled { border-bottom-color: var(--color-divider-soft); }
+.nav-brand { font-family: var(--font-heading); font-weight: 600; font-size: 18px; margin-right: auto; text-decoration: none; color: var(--color-text); }
+.nav a:not(.nav-brand) {
+  color: color-mix(in srgb, var(--color-text) 68%, transparent); text-decoration: none;
+  font-size: 12px; letter-spacing: 0.07em; text-transform: uppercase; font-weight: 600;
+}
+.nav a:not(.nav-brand):hover { color: var(--color-accent); }
 
-.nav { display: flex; align-items: center; gap: var(--space-4); padding: var(--space-3) var(--space-4); }
-.nav-brand { font-family: var(--font-body); font-weight: 700; font-size: 16px; margin-right: auto; color: var(--color-text); }
-.nav a:not(.btn) { color: color-mix(in srgb, var(--color-text) 75%, transparent); text-decoration: none; font-size: 14px; }
-.nav a:not(.btn):hover { color: var(--color-accent); }
+/* ---- hero ---- */
+.hero {
+  display: flex; align-items: stretch; gap: clamp(28px, 5vw, 64px);
+  padding: clamp(48px, 8vw, 88px) 0 var(--section-gap);
+  border-bottom: 1px solid var(--color-divider);
+}
+.hero > div:first-child { flex: 7; min-width: 0; }
+.hero-eyebrow { display: block; margin-bottom: 26px; }
+.hero-title {
+  font-size: clamp(34px, 4vw, 60px); line-height: 1.08; letter-spacing: -0.015em;
+  max-width: 22ch;
+}
+.hero-dek {
+  font-size: 19px; line-height: 1.6; max-width: 52ch;
+  color: color-mix(in srgb, var(--color-text) 84%, transparent);
+  margin: 32px 0 0;
+}
+.hero-actions { display: flex; align-items: baseline; gap: 26px; flex-wrap: wrap; margin-top: 36px; }
+.hero-actions .link { font-size: 14.5px; color: color-mix(in srgb, var(--color-text) 68%, transparent); text-decoration: none; }
+.hero-actions .link:hover { color: var(--color-accent); text-decoration: underline; }
+.hero-actions .link-primary { font-size: 16px; color: var(--color-accent); text-decoration: underline; }
 
-.project-card { transition: transform .25s ease, box-shadow .25s ease; }
-.project-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.hero-portrait {
+  position: relative; overflow: hidden; flex: 3.4; min-width: 0;
+  margin-right: calc(-1 * (max(0px, (100vw - var(--measure)) / 2) + clamp(24px, 5vw, 72px)));
+}
+.hero-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: top center; filter: url(#duotone); display: block; }
 
-.progress-track { height: 6px; border-radius: 999px; background: var(--color-neutral-100); overflow: hidden; margin-bottom: 12px; }
-.progress-fill { height: 100%; border-radius: 999px; background: var(--color-accent); }
+/* ---- section rhythm: one consistent formula, applied everywhere ---- */
+section { padding: 0 0 var(--section-gap); }
+.section-head { padding-top: var(--section-gap); margin-bottom: var(--head-gap); }
+.section-num { display: block; margin-bottom: 16px; }
+.section-title { font-size: clamp(30px, 3.4vw, 44px); max-width: 24ch; }
 
-@keyframes revealUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes heroFade { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
-html { scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
-body { overflow-x: clip; }
+/* ---- leadership: one flowing statement — deliberately not another hairline table ---- */
+.manifesto {
+  font-family: var(--font-heading); font-weight: 500;
+  font-size: clamp(28px, 3.6vw, 44px); line-height: 1.4; letter-spacing: -0.005em;
+  max-width: 68ch; color: color-mix(in srgb, var(--color-text) 62%, transparent);
+}
+.manifesto strong { color: var(--color-text); font-weight: 600; }
 
-@media (max-width: 800px) {
-  .hero-grid { grid-template-columns: 1fr !important; }
-  .hero-visual { justify-self: start !important; width: 100% !important; margin-top: 32px; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
-  .leadership-grid { grid-template-columns: 1fr !important; }
-  .projects-grid { grid-template-columns: 1fr !important; }
-  .stack-cols { grid-template-columns: 1fr !important; }
-  .contact-patch { grid-template-columns: 1fr !important; border-radius: 32px !important; }
-  .nav { flex-wrap: wrap; }
+/* ---- KPI: the one big visual moment on the page — huge tabular serif numerals ---- */
+.kpi-section { padding-top: clamp(56px, 9vw, 96px); border-top: 1px solid var(--color-divider); }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(16px, 3vw, 32px); }
+.kpi-value {
+  font-family: var(--font-heading); font-variant-numeric: tabular-nums;
+  font-size: clamp(40px, 6.4vw, 92px); line-height: 1; color: var(--color-text);
+  letter-spacing: -0.01em; white-space: nowrap;
+}
+.kpi-value .unit { font-size: 0.48em; vertical-align: 0.14em; color: var(--color-accent); }
+.kpi-label { font-size: 14px; color: var(--color-muted); margin-top: 10px; max-width: 16ch; }
+
+/* ---- timeline rows (experience) — same grammar as the stack table below ---- */
+.row-grid { display: grid; grid-template-columns: 210px 1fr; gap: 28px; }
+.rows { border-top: 1px solid var(--color-divider); }
+.rows > * { border-bottom: 1px solid var(--color-divider); }
+.xp-row { padding: 40px 0; }
+.xp-meta { padding-top: 3px; }
+.xp-period { font-size: 14px; color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+.xp-company { font-family: var(--font-body); font-weight: 700; font-size: 14.5px; letter-spacing: 0.01em; margin-top: 6px; }
+.xp-metric { font-family: var(--font-heading); font-size: 17px; color: var(--color-accent); margin-top: 14px; }
+.xp-role { font-size: 22px; margin-bottom: 10px; }
+.xp-summary { font-size: 16px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 82%, transparent); max-width: 62ch; margin-bottom: 4px; }
+.xp-bullets { display: grid; gap: 10px; }
+.xp-bullets p { font-size: 16px; line-height: 1.6; max-width: 62ch; color: color-mix(in srgb, var(--color-text) 82%, transparent); }
+/* ---- projects: same 210px/1fr grammar as experience, tighter rhythm ---- */
+.proj-row { padding: 22px 0; }
+.proj-kind { font-size: 12.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-accent-2); padding-top: 4px; }
+.proj-name { font-family: var(--font-body); font-weight: 600; font-size: 17px; }
+.proj-name a { text-decoration: none; }
+.proj-name a:hover { text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--color-accent) 45%, transparent); }
+.proj-desc { font-size: 14.5px; line-height: 1.55; color: color-mix(in srgb, var(--color-text) 76%, transparent); margin: 6px 0 8px; max-width: 62ch; }
+.proj-stack { font-size: 13px; letter-spacing: 0.02em; color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+
+.proj-more { padding-top: 26px; border-top: 1px solid var(--color-divider); }
+.proj-more-list { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+.proj-more-list li { font-size: 14px; line-height: 1.5; color: color-mix(in srgb, var(--color-text) 60%, transparent); }
+.proj-more-list a { color: var(--color-text); font-weight: 600; text-decoration: none; }
+.proj-more-list a:hover { text-decoration: underline; }
+
+/* ---- stack / skills: flowing definition text, not a spreadsheet ---- */
+.skill-row { padding: 18px 0; align-items: baseline; }
+.skill-domain { font-weight: 600; font-size: 15px; padding-top: 0; }
+.skill-tools { font-size: 15px; line-height: 1.65; color: color-mix(in srgb, var(--color-text) 82%, transparent); }
+
+.cred-cols { display: grid; gap: 40px; margin-top: var(--head-gap); max-width: 62ch; }
+.cred-h { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted-soft); margin-bottom: 16px; }
+.edu-entry { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.edu-entry + .edu-entry { margin-top: 12px; }
+.edu-degree { font-family: var(--font-body); font-weight: 700; font-size: 15px; }
+.edu-school { font-size: 14px; color: var(--color-muted); }
+.cert-list {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px 20px;
+  font-size: 15px; line-height: 1.5; color: color-mix(in srgb, var(--color-text) 78%, transparent);
+  margin: 22px 0 0; padding: 0; list-style: none;
+}
+
+/* ---- contact: the one reversed-color moment on the page ---- */
+.contact-band { background: #2a0f26; color: #faf7f1; }
+.contact { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 64px); padding-top: var(--section-gap); }
+.label-inverse { color: color-mix(in srgb, #faf7f1 75%, transparent); }
+.contact-title { font-size: clamp(34px, 4vw, 52px); max-width: 14ch; color: #faf7f1; }
+.contact-dek { font-size: 17px; line-height: 1.6; color: color-mix(in srgb, #faf7f1 82%, transparent); max-width: 46ch; margin-top: 18px; }
+.contact-details { display: grid; gap: 12px; font-size: 16px; align-content: start; padding-top: 8px; }
+.contact-details p { color: color-mix(in srgb, #faf7f1 78%, transparent); }
+.link-inverse { color: color-mix(in srgb, #faf7f1 82%, transparent); text-decoration: underline; text-decoration-color: color-mix(in srgb, #faf7f1 35%, transparent); }
+.link-inverse:hover { color: #faf7f1; }
+.link-inverse-primary {
+  display: inline-block; font-size: 19px; font-weight: 600; color: #faf7f1;
+  text-decoration: underline; text-underline-offset: 4px;
+}
+
+.footer-inner {
+  border-top: 1px solid color-mix(in srgb, #faf7f1 18%, transparent);
+  margin-top: clamp(56px, 8vw, 88px);
+  padding: 24px 0;
+  display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px;
+  font-size: 13.5px; color: color-mix(in srgb, #faf7f1 58%, transparent);
+}
+.footer-links { display: flex; gap: 18px; }
+.footer-links a { text-decoration: none; color: inherit; }
+.footer-links a:hover { color: #faf7f1; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+.hero-title, .hero-dek, .hero-actions { animation: fadeUp .7s ease both; }
+.hero-dek { animation-delay: .08s; }
+.hero-actions { animation-delay: .16s; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+@media (max-width: 860px) {
+  .hero { flex-direction: column; }
+  .hero > div:first-child { flex: none; }
+  .hero-portrait { max-width: 280px; aspect-ratio: 4 / 5; order: -1; flex: none; margin-right: 0; }
+  .hero-title { max-width: none; }
+  .tenets { grid-template-columns: 1fr; }
+  .tenet:nth-child(odd) { border-right: none; padding-right: 0; }
+  .tenet:nth-child(even) { padding-left: 0; }
+  .row-grid, .xp-row { grid-template-columns: 1fr !important; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kpi-value { font-size: clamp(40px, 13vw, 64px); }
+  .xp-meta { display: flex; justify-content: space-between; align-items: baseline; }
+  .contact { grid-template-columns: 1fr; }
+  .nav-inner { flex-wrap: wrap; row-gap: 10px; }
 }
 </style>
 </head>
 <body>
-<div id="arj-root" style="background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); text-wrap:pretty;">
+<div class="grain" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="duotone" color-interpolation-filters="sRGB">
+    <feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0"/>
+    <feComponentTransfer>
+      <feFuncR type="table" tableValues="0.106 0.980"/>
+      <feFuncG type="table" tableValues="0.043 0.969"/>
+      <feFuncB type="table" tableValues="0.098 0.945"/>
+    </feComponentTransfer>
+  </filter>
+</svg>
 
-  <nav class="nav" style="position:sticky; top:0; z-index:20; backdrop-filter:blur(6px); background:color-mix(in srgb, var(--color-bg) 88%, transparent);">
-    <span class="nav-brand">Arjun Kulshreshtha</span>
+<nav class="nav" id="site-nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">Arjun Kulshreshtha</a>
     <a href="#leadership">Leadership</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#stack">Credentials</a>
     <a href="#contact">Contact</a>
-    <a href="https://www.linkedin.com/in/arjunkulshreshtha" target="_blank" rel="noopener" class="btn btn-primary">LinkedIn</a>
-  </nav>
-
-  <div style="max-width:1200px; margin:0 auto; padding:0 clamp(20px,5vw,72px);">
-
-    <section class="hero-grid" style="position:relative; display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:44px; align-items:center; padding:88px 0 56px;">
-      <div style="position:absolute; right:-140px; top:-160px; width:360px; height:360px; border-radius:50%; background:var(--color-accent-2-200); z-index:-1;"></div>
-      <div style="animation: heroFade .8s ease both;">
-        <span style="display:block; font-size:13px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; color:var(--color-accent-700); margin-bottom:16px;">Director-Track · Business Strategy &amp; Operations</span>
-        <h1 style="font-size:clamp(38px,5.4vw,68px); margin:0;">Strategy leader who ships what they design</h1>
-        <p style="font-size:17px; line-height:1.65; max-width:56ch; color:color-mix(in srgb, var(--color-text) 82%, transparent); margin:24px 0 0;">I own B2B vertical strategy at ShipMonk and personally build the AI systems that execute it — including a Claude-based multi-agent pipeline behind an 82% merchant chargeback reduction. Earlier: a $99M infrastructure launch and a 10x station scale-up at Amazon.</p>
-        <div style="display:flex; gap:13px; flex-wrap:wrap; margin-top:28px;">
-          <a href="#projects" class="btn btn-primary">Selected work ↘</a>
-          <a href="https://www.linkedin.com/in/arjunkulshreshtha" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
-          <a href="https://github.com/arjkul" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
-          <a href="mailto:arj.kulshreshtha@yahoo.com" class="btn btn-ghost">Email</a>
-        </div>
-      </div>
-      <div class="hero-visual" style="position:relative; justify-self:end; width:min(420px,100%); animation: heroFade 1s ease .1s both;">
-        <img src="assets/img/hero-collage.webp" alt="Collage of a model-training pipeline diagram, a fulfillment metrics table, a rising performance chart, and a purple US logistics network map with truck and air routes between distribution hubs" style="width:100%; height:auto; border-radius:24px; box-shadow:var(--shadow-lg);">
-        <div style="position:absolute; left:-18px; bottom:-18px; background:var(--color-bg); border-radius:16px; padding:14px 20px; box-shadow:var(--shadow-lg);">
-          <div style="font-size:11px; letter-spacing:0.05em; text-transform:uppercase; color:color-mix(in srgb, var(--color-text) 65%, transparent);">Cumulative savings</div>
-          <div style="font-family:var(--font-heading); font-size:24px; color:var(--color-accent-700);">$20M+</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="leadership" style="padding:24px 0 72px;">
-      <span style="display:block; font-size:13px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; color:var(--color-accent-700); margin-bottom:14px;">Leadership approach</span>
-      <h2 style="font-size:clamp(28px,3vw,40px); margin:0 0 16px; max-width:640px;">Engineering scalable systems.</h2>
-      <p style="font-size:16px; line-height:1.65; color:color-mix(in srgb, var(--color-text) 82%, transparent); max-width:620px; margin:0 0 40px;">I turn operational complexity into clear product roadmaps, data systems, and durable operating mechanisms — then build the teams that make the improvement stick.</p>
-      <div class="leadership-grid" style="display:grid; grid-template-columns:repeat(2,1fr); gap:32px 48px;">
-
-        <div style="animation:revealUp .7s ease both;">
-          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
-            <h3 style="font-size:17px;">Product strategy</h3>
-            <span style="font-family:var(--font-heading); font-size:16px; color:var(--color-accent-700);">95%</span>
-          </div>
-          <div class="progress-track"><div class="progress-fill" style="width:95%;"></div></div>
-          <p style="font-size:14.5px; color:color-mix(in srgb, var(--color-text) 75%, transparent); margin:0;">Market opportunities, roadmaps, and 0–100 initiatives</p>
-        </div>
-
-        <div style="animation:revealUp .7s ease both;">
-          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
-            <h3 style="font-size:17px;">Operational excellence</h3>
-            <span style="font-family:var(--font-heading); font-size:16px; color:var(--color-accent-700);">92%</span>
-          </div>
-          <div class="progress-track"><div class="progress-fill" style="width:92%;"></div></div>
-          <p style="font-size:14.5px; color:color-mix(in srgb, var(--color-text) 75%, transparent); margin:0;">Forecasting, labor planning, quality, and cost efficiency</p>
-        </div>
-
-        <div style="animation:revealUp .7s ease both;">
-          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
-            <h3 style="font-size:17px;">AI &amp; automation</h3>
-            <span style="font-family:var(--font-heading); font-size:16px; color:var(--color-accent-700);">88%</span>
-          </div>
-          <div class="progress-track"><div class="progress-fill" style="width:88%;"></div></div>
-          <p style="font-size:14.5px; color:color-mix(in srgb, var(--color-text) 75%, transparent); margin:0;">Practical tools that remove manual work and surface decisions</p>
-        </div>
-
-        <div style="animation:revealUp .7s ease both;">
-          <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
-            <h3 style="font-size:17px;">Cross-functional leadership</h3>
-            <span style="font-family:var(--font-heading); font-size:16px; color:var(--color-accent-700);">90%</span>
-          </div>
-          <div class="progress-track"><div class="progress-fill" style="width:90%;"></div></div>
-          <p style="font-size:14.5px; color:color-mix(in srgb, var(--color-text) 75%, transparent); margin:0;">Aligned teams across product, operations, engineering, and partners</p>
-        </div>
-
-      </div>
-    </section>
-
-    <section aria-label="Career highlights" class="stats-grid" style="display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--color-divider); border-bottom:1px solid var(--color-divider); margin:8px 0 40px;">
-      <div style="animation:revealUp .7s ease both; padding:12px 16px; border-right:1px solid var(--color-divider);">
-        <div style="display:flex; align-items:center; gap:8px;">
-          <div style="width:20px; height:20px; border-radius:6px; display:grid; place-content:center; background:var(--color-accent-100); color:var(--color-accent); font-size:12px;">$</div>
-          <p style="font-family:var(--font-heading); font-weight:500; font-size:26px; margin:0;">$20M+</p>
-        </div>
-        <p style="font-size:13px; color:color-mix(in srgb, var(--color-text) 65%, transparent); margin:4px 0 0;">Cumulative cost savings</p>
-      </div>
-      <div style="animation:revealUp .7s ease both; padding:12px 16px; border-right:1px solid var(--color-divider);">
-        <div style="display:flex; align-items:center; gap:8px;">
-          <div style="width:20px; height:20px; border-radius:6px; display:grid; place-content:center; background:var(--color-accent-100); color:var(--color-accent); font-size:12px;">↗</div>
-          <p style="font-family:var(--font-heading); font-weight:500; font-size:26px; margin:0;">10×</p>
-        </div>
-        <p style="font-size:13px; color:color-mix(in srgb, var(--color-text) 65%, transparent); margin:4px 0 0;">Scale within one year</p>
-      </div>
-      <div style="animation:revealUp .7s ease both; padding:12px 16px; border-right:1px solid var(--color-divider);">
-        <div style="display:flex; align-items:center; gap:8px;">
-          <div style="width:20px; height:20px; border-radius:6px; display:grid; place-content:center; background:var(--color-accent-100); color:var(--color-accent); font-size:12px;">↑</div>
-          <p style="font-family:var(--font-heading); font-weight:500; font-size:26px; margin:0;">82%</p>
-        </div>
-        <p style="font-size:13px; color:color-mix(in srgb, var(--color-text) 65%, transparent); margin:4px 0 0;">Chargeback reduction</p>
-      </div>
-      <div style="animation:revealUp .7s ease both; padding:12px 16px;">
-        <div style="display:flex; align-items:center; gap:8px;">
-          <div style="width:20px; height:20px; border-radius:6px; display:grid; place-content:center; background:var(--color-accent-100); color:var(--color-accent); font-size:12px;">▢</div>
-          <p style="font-family:var(--font-heading); font-weight:500; font-size:26px; margin:0;">$99M</p>
-        </div>
-        <p style="font-size:13px; color:color-mix(in srgb, var(--color-text) 65%, transparent); margin:4px 0 0;">Project launch led</p>
-      </div>
-    </section>
-
-    <section id="experience" style="padding:24px 0 72px;">
-      <span style="display:block; font-size:13px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; color:var(--color-accent-700); margin-bottom:14px;">01 — Experience</span>
-      <h2 style="font-size:clamp(28px,3vw,40px); margin:0 0 32px;">Where I've led</h2>
-      <div style="display:grid; gap:20px;">
-
-        <div class="card" style="animation:revealUp .7s ease both;">
-          <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline;">
-            <h3 style="font-size:22px; margin:0;">Senior Manager — B2B Transformation</h3>
-            <span style="font-size:13px; color:color-mix(in srgb, var(--color-text) 65%, transparent); white-space:nowrap;">2025 — Present · Pennsylvania</span>
-          </div>
-          <p style="font-size:15px; font-weight:600; color:var(--color-accent-700); margin:6px 0 12px;">ShipMonk</p>
-          <p style="font-size:15.5px; line-height:1.65; color:color-mix(in srgb, var(--color-text) 80%, transparent); margin:0 0 14px; max-width:74ch;">Oversee strategic expansion of B2B e-commerce for SMEs, identifying new revenue streams, scaling infrastructure, and driving the product roadmap across 0–100 initiatives.</p>
-          <ul style="margin:0 0 16px; padding-left:20px; display:grid; gap:8px;">
-            <li style="font-size:15px; line-height:1.6;">Reduced merchant churn by 35% through stakeholder engagement and product improvements, cutting chargebacks by 82% from Q2 to Q3 2025</li>
-            <li style="font-size:15px; line-height:1.6;">Defined and managed the roadmap for a $4M initiative aligning product features with key industry metrics, improving on-time delivery by 8%</li>
-            <li style="font-size:15px; line-height:1.6;">Launched an industry-first white-glove onboarding service supporting 100+ SME accounts across 15+ big-box retailers, cutting launch timelines by 15%</li>
-          </ul>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <span class="tag tag-neutral">B2B Strategy</span>
-            <span class="tag tag-neutral">SME E-Commerce</span>
-            <span class="tag tag-neutral">Roadmap</span>
-            <span class="tag tag-neutral">Chargeback Reduction</span>
-          </div>
-        </div>
-
-        <div class="card" style="animation:revealUp .7s ease both;">
-          <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline;">
-            <h3 style="font-size:22px; margin:0;">Senior Manager — eCommerce &amp; Product Strategy</h3>
-            <span style="font-size:13px; color:color-mix(in srgb, var(--color-text) 65%, transparent); white-space:nowrap;">2020 — 2025 · NE &amp; Midwest (IL, MA, CT, NY)</span>
-          </div>
-          <p style="font-size:15px; font-weight:600; color:var(--color-accent-700); margin:6px 0 12px;">Amazon</p>
-          <p style="font-size:15.5px; line-height:1.65; color:color-mix(in srgb, var(--color-text) 80%, transparent); margin:0 0 14px; max-width:74ch;">Oversaw strategic operations across multiple last-mile delivery stations, led multimillion-dollar infrastructure and expansion projects, and drove automation to reduce defects.</p>
-          <ul style="margin:0 0 16px; padding-left:20px; display:grid; gap:8px;">
-            <li style="font-size:15px; line-height:1.6;">Increased regional productivity by 10% (13K manhours) in 3 months, generating $4.5M in savings — top 10 nationally in last-mile performance</li>
-            <li style="font-size:15px; line-height:1.6;">Led a $99M project launch, onboarding 160+ associates and 400 drivers in 100 days, delivered on time</li>
-            <li style="font-size:15px; line-height:1.6;">Scaled a last-mile station from 10K to 100K shipments/day within one year while improving quality metrics by 76% and leading a 21-member management team</li>
-            <li style="font-size:15px; line-height:1.6;">Defined the roadmap for a $5M automation initiative that improved efficiency by 12% across three facilities</li>
-            <li style="font-size:15px; line-height:1.6;">Optimized labor planning for 1,500+ associates, improving network capacity utilization by 15%</li>
-            <li style="font-size:15px; line-height:1.6;">Reduced delivery errors from 360 bps to 88 bps within three days during peak season</li>
-          </ul>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <span class="tag tag-neutral">Last-Mile Ops</span>
-            <span class="tag tag-neutral">Labor Planning</span>
-            <span class="tag tag-neutral">Automation</span>
-            <span class="tag tag-neutral">Forecasting</span>
-          </div>
-        </div>
-
-        <div class="card" style="animation:revealUp .7s ease both;">
-          <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline;">
-            <h3 style="font-size:22px; margin:0;">Assistant Manager — Supply Chain &amp; Logistics Strategy</h3>
-            <span style="font-size:13px; color:color-mix(in srgb, var(--color-text) 65%, transparent); white-space:nowrap;">2012 — 2019 · Multiple Cities, India</span>
-          </div>
-          <p style="font-size:15px; font-weight:600; color:var(--color-accent-700); margin:6px 0 12px;">HPCL</p>
-          <p style="font-size:15.5px; line-height:1.65; color:color-mix(in srgb, var(--color-text) 80%, transparent); margin:0 0 14px; max-width:74ch;">Led large-scale supply chain, logistics, infrastructure, sustainability, and asset-utilization initiatives at one of India's largest public sector energy companies.</p>
-          <ul style="margin:0 0 16px; padding-left:20px; display:grid; gap:8px;">
-            <li style="font-size:15px; line-height:1.6;">Developed a roadmap to reallocate Renewable Energy Certificates from wind farms, achieving $2.5M in annual savings</li>
-            <li style="font-size:15px; line-height:1.6;">Deployed forecasting models that identified bottlenecks and improved downtime accuracy and productivity by 8%</li>
-            <li style="font-size:15px; line-height:1.6;">Coordinated 120+ third-party security personnel and local agencies for incident-free operation of a 90-mile gas pipeline over 3 years</li>
-            <li style="font-size:15px; line-height:1.6;">Migrated a legacy security tracking system to a modern UX through user research and rapid iteration</li>
-          </ul>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <span class="tag tag-neutral">Supply Chain</span>
-            <span class="tag tag-neutral">Predictive Analytics</span>
-            <span class="tag tag-neutral">Stakeholder Management</span>
-          </div>
-        </div>
-
-        <div class="card" style="animation:revealUp .7s ease both;">
-          <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:baseline;">
-            <h3 style="font-size:22px; margin:0;">Product Consulting Team Lead</h3>
-            <span style="font-size:13px; color:color-mix(in srgb, var(--color-text) 65%, transparent); white-space:nowrap;">2019 · Consulting Project</span>
-          </div>
-          <p style="font-size:15px; font-weight:600; color:var(--color-accent-700); margin:6px 0 12px;">Nestlé Purina</p>
-          <p style="font-size:15.5px; line-height:1.65; color:color-mix(in srgb, var(--color-text) 80%, transparent); margin:0 0 14px; max-width:74ch;">Led a cross-functional team of seven on a six-month product vision engagement, directing market research and delivering data-driven recommendations for the Pet Finder platform.</p>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <span class="tag tag-neutral">Product Vision</span>
-            <span class="tag tag-neutral">Market Research</span>
-            <span class="tag tag-neutral">Revenue Strategy</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="projects" style="padding:24px 0 72px;">
-      <span style="display:block; font-size:13px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; color:var(--color-accent-700); margin-bottom:14px;">02 — Technical Projects</span>
-      <h2 style="font-size:clamp(28px,3vw,40px); margin:0 0 32px;">What I've been building</h2>
-      <div class="projects-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
-
-        <a href="https://github.com/arjkul/multi-agent-merchant-education-pipeline" target="_blank" rel="noopener" class="card project-card" style="animation:revealUp .7s ease both; text-decoration:none; color:inherit; display:flex; flex-direction:column; padding:13.2px;">
-          <img src="assets/img/proj-1.webp" alt="Workflow diagram: Initial Assessment leads to Curriculum Generation, then Agent Delivery via a teacher agent with automation handoffs, then Performance Tracking" style="width:100%; height:150px; object-fit:cover; border-radius:18px; margin:-13.2px -13.2px 4px;">
-          <div class="card-kicker">AI Automation</div>
-          <div class="card-title">Multi-Agent Merchant Education Pipeline</div>
-          <p class="card-body">Automates merchant onboarding education with multi-agent orchestration, content personalization, and progress tracking.</p>
-          <div style="display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 14px;">
-            <span class="tag tag-outline" style="font-size:11px;">Multi-Agent</span>
-            <span class="tag tag-outline" style="font-size:11px;">Education</span>
-            <span class="tag tag-outline" style="font-size:11px;">Claude API</span>
-          </div>
-          <div class="card-meta">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>View repo</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/arjkul/warehouse-ops-intelligence" target="_blank" rel="noopener" class="card project-card" style="animation:revealUp .7s ease both; text-decoration:none; color:inherit; display:flex; flex-direction:column; padding:13.2px;">
-          <img src="assets/img/proj-2.webp" alt="Weekly Operations Dashboard showing a warehouse network graph, bar charts by weekday, and KPI strips" style="width:100%; height:150px; object-fit:cover; border-radius:18px; margin:-13.2px -13.2px 4px;">
-          <div class="card-kicker">B2B Operations</div>
-          <div class="card-title">Warehouse Ops Intelligence</div>
-          <p class="card-body">Production BI system surfacing OTRS, OTS, pick/pack audit, and late-order data across 10+ warehouses weekly.</p>
-          <div style="display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 14px;">
-            <span class="tag tag-outline" style="font-size:11px;">Snowflake</span>
-            <span class="tag tag-outline" style="font-size:11px;">Metabase</span>
-            <span class="tag tag-outline" style="font-size:11px;">SQL</span>
-          </div>
-          <div class="card-meta">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>View repo</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/arjkul/b2b-chargeback-rca-framework" target="_blank" rel="noopener" class="card project-card" style="animation:revealUp .7s ease both; text-decoration:none; color:inherit; display:flex; flex-direction:column; padding:13.2px;">
-          <img src="assets/img/proj-3.webp" alt="Sparse causal graph tracing a disputed chargeback to root causes, alongside a descending monthly defect trend chart" style="width:100%; height:150px; object-fit:cover; border-radius:18px; margin:-13.2px -13.2px 4px;">
-          <div class="card-kicker">AI Tooling</div>
-          <div class="card-title">Chargeback RCA Framework</div>
-          <p class="card-body">AI-assisted root-cause analysis across Snowflake, PostgreSQL, and EDI compliance data that contributed to an 82% chargeback reduction.</p>
-          <div style="display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 14px;">
-            <span class="tag tag-outline" style="font-size:11px;">Claude API</span>
-            <span class="tag tag-outline" style="font-size:11px;">EDI</span>
-            <span class="tag tag-outline" style="font-size:11px;">PostgreSQL</span>
-          </div>
-          <div class="card-meta">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>View repo</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/arjkul/llm-daily-drivers" target="_blank" rel="noopener" class="card project-card" style="animation:revealUp .7s ease both; text-decoration:none; color:inherit; display:flex; flex-direction:column;">
-          <div class="card-kicker">AI Toolkit</div>
-          <div class="card-title">LLM Daily Drivers</div>
-          <p class="card-body">Curated non-technical LLM apps for productivity, creativity, health, and finance, with beginner-friendly setup guides.</p>
-          <div style="display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 14px;">
-            <span class="tag tag-outline" style="font-size:11px;">AI Agents</span>
-            <span class="tag tag-outline" style="font-size:11px;">LLM Apps</span>
-            <span class="tag tag-outline" style="font-size:11px;">Productivity</span>
-          </div>
-          <div class="card-meta">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>View repo</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/arjkul/slow-kratos" target="_blank" rel="noopener" class="card project-card" style="animation:revealUp .7s ease both; text-decoration:none; color:inherit; display:flex; flex-direction:column;">
-          <div class="card-kicker">Personal Infrastructure</div>
-          <div class="card-title">slow-kratos</div>
-          <p class="card-body">Self-hosted AI stack connecting Ollama, Open WebUI, n8n, Docker MCP Gateway, and Tailscale.</p>
-          <div style="display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 14px;">
-            <span class="tag tag-outline" style="font-size:11px;">Ollama</span>
-            <span class="tag tag-outline" style="font-size:11px;">n8n</span>
-            <span class="tag tag-outline" style="font-size:11px;">Docker</span>
-          </div>
-          <div class="card-meta">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>View repo</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/arjkul/Claudemeter" target="_blank" rel="noopener" class="card project-card" style="animation:revealUp .7s ease both; text-decoration:none; color:inherit; display:flex; flex-direction:column;">
-          <div class="card-kicker">Desktop Widget</div>
-          <div class="card-title">ClaudeMeter</div>
-          <p class="card-body">Real-time Claude API usage monitor for Windows with session and weekly quota views.</p>
-          <div style="display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 14px;">
-            <span class="tag tag-outline" style="font-size:11px;">Rainmeter</span>
-            <span class="tag tag-outline" style="font-size:11px;">PowerShell</span>
-            <span class="tag tag-outline" style="font-size:11px;">Lua</span>
-          </div>
-          <div class="card-meta">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>View repo</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/arjkul/merchant-onboarding-analytics" target="_blank" rel="noopener" class="card project-card" style="animation:revealUp .7s ease both; text-decoration:none; color:inherit; display:flex; flex-direction:column;">
-          <div class="card-kicker">Analytics</div>
-          <div class="card-title">Merchant Onboarding Analytics</div>
-          <p class="card-body">Python automation on the Asana API analyzing go-live patterns across 200+ wholesale merchants.</p>
-          <div style="display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 14px;">
-            <span class="tag tag-outline" style="font-size:11px;">Python</span>
-            <span class="tag tag-outline" style="font-size:11px;">Asana API</span>
-            <span class="tag tag-outline" style="font-size:11px;">Data Analysis</span>
-          </div>
-          <div class="card-meta">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>View repo</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/arjkul/metabase-sql-playbook" target="_blank" rel="noopener" class="card project-card" style="animation:revealUp .7s ease both; text-decoration:none; color:inherit; display:flex; flex-direction:column;">
-          <div class="card-kicker">Documentation</div>
-          <div class="card-title">Metabase SQL Playbook</div>
-          <p class="card-body">Reusable SQL pattern library that standardizes dashboard building for distributed warehouse analysts.</p>
-          <div style="display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 14px;">
-            <span class="tag tag-outline" style="font-size:11px;">SQL</span>
-            <span class="tag tag-outline" style="font-size:11px;">Metabase</span>
-            <span class="tag tag-outline" style="font-size:11px;">Warehousing</span>
-          </div>
-          <div class="card-meta">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>View repo</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/arjkul/b2b-packing-config-generator" target="_blank" rel="noopener" class="card project-card" style="animation:revealUp .7s ease both; text-decoration:none; color:inherit; display:flex; flex-direction:column;">
-          <div class="card-kicker">Automation</div>
-          <div class="card-title">B2B Packing Config Generator</div>
-          <p class="card-body">Google Apps Script tool standardizing B2B packing configurations and eliminating manual setup time.</p>
-          <div style="display:flex; gap:6px; flex-wrap:wrap; margin:12px 0 14px;">
-            <span class="tag tag-outline" style="font-size:11px;">Apps Script</span>
-            <span class="tag tag-outline" style="font-size:11px;">Automation</span>
-            <span class="tag tag-outline" style="font-size:11px;">B2B Ops</span>
-          </div>
-          <div class="card-meta">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>View repo</span>
-          </div>
-        </a>
-
-      </div>
-      <a href="https://github.com/arjkul" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:28px; display:inline-flex;">View all projects on GitHub ↗</a>
-    </section>
-
-    <section id="stack" style="padding:24px 0 72px;">
-      <span style="display:block; font-size:13px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; color:var(--color-accent-700); margin-bottom:14px;">03 — Skills &amp; Stack</span>
-      <h2 style="font-size:clamp(28px,3vw,40px); margin:0 0 28px;">Tools of the trade</h2>
-      <div style="display:grid; border-top:1px solid var(--color-divider);">
-        <div style="display:grid; grid-template-columns:220px 1fr; gap:16px; padding:12px 4px; font-size:12px; letter-spacing:.05em; text-transform:uppercase; font-weight:600; color:color-mix(in srgb, var(--color-text) 65%, transparent);">
-          <span>Domain</span><span>Tools &amp; Skills</span>
-        </div>
-        <div style="display:grid; grid-template-columns:220px 1fr; gap:16px; padding:14px 4px; border-top:1px solid var(--color-divider); align-items:baseline;">
-          <span style="font-weight:600; font-size:15px;">Product Management</span>
-          <span style="font-size:14.5px; line-height:1.6; color:color-mix(in srgb, var(--color-text) 82%, transparent);">Product Strategy, Roadmap Development, Backlog Prioritization, User Story Creation, Jira, Scrum</span>
-        </div>
-        <div style="display:grid; grid-template-columns:220px 1fr; gap:16px; padding:14px 4px; border-top:1px solid var(--color-divider); align-items:baseline;">
-          <span style="font-weight:600; font-size:15px;">AI &amp; Automation</span>
-          <span style="font-size:14.5px; line-height:1.6; color:color-mix(in srgb, var(--color-text) 82%, transparent);">Claude Code, Cursor, Gemini CLI, Ollama, n8n, Zapier, AI Studio</span>
-        </div>
-        <div style="display:grid; grid-template-columns:220px 1fr; gap:16px; padding:14px 4px; border-top:1px solid var(--color-divider); align-items:baseline;">
-          <span style="font-weight:600; font-size:15px;">Data &amp; Analytics</span>
-          <span style="font-size:14.5px; line-height:1.6; color:color-mix(in srgb, var(--color-text) 82%, transparent);">Python, SQL, Power BI, Tableau, Quicksight, Metabase, Advanced Excel</span>
-        </div>
-        <div style="display:grid; grid-template-columns:220px 1fr; gap:16px; padding:14px 4px; border-top:1px solid var(--color-divider); align-items:baseline;">
-          <span style="font-weight:600; font-size:15px;">Engineering</span>
-          <span style="font-size:14.5px; line-height:1.6; color:color-mix(in srgb, var(--color-text) 82%, transparent);">JavaScript, HTML/CSS, MySQL, REST APIs, VBA, ERP / JDE</span>
-        </div>
-        <div style="display:grid; grid-template-columns:220px 1fr; gap:16px; padding:14px 4px; border-top:1px solid var(--color-divider); align-items:baseline;">
-          <span style="font-weight:600; font-size:15px;">Cloud &amp; Infra</span>
-          <span style="font-size:14.5px; line-height:1.6; color:color-mix(in srgb, var(--color-text) 82%, transparent);">AWS GenAI, Docker, Tailscale, MCP Gateway, Snowflake</span>
-        </div>
-        <div style="display:grid; grid-template-columns:220px 1fr; gap:16px; padding:14px 4px; border-top:1px solid var(--color-divider); align-items:baseline;">
-          <span style="font-weight:600; font-size:15px;">Leadership</span>
-          <span style="font-size:14.5px; line-height:1.6; color:color-mix(in srgb, var(--color-text) 82%, transparent);">Cross-Functional Teams, Agile / Kanban, OKRs, Forecasting, Risk Management</span>
-        </div>
-      </div>
-      <div class="stack-cols" style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:40px;">
-        <div>
-          <h3 style="font-size:20px; margin:0 0 14px;">Education</h3>
-          <div style="display:grid; gap:12px;">
-            <div class="card" style="padding:18px 22px;">
-              <p style="margin:0; font-weight:600; font-size:15px;">MBA</p>
-              <p style="margin:4px 0 0; font-size:14px; color:color-mix(in srgb, var(--color-text) 75%, transparent);">Washington University</p>
-              <p style="margin:6px 0 0;"><span class="tag tag-accent-2">Merit-Based Scholarship</span></p>
-            </div>
-            <div class="card" style="padding:18px 22px;">
-              <p style="margin:0; font-weight:600; font-size:15px;">B.S. Electronics &amp; Communications Engineering</p>
-              <p style="margin:4px 0 0; font-size:14px; color:color-mix(in srgb, var(--color-text) 75%, transparent);">Allahabad University</p>
-              <p style="margin:6px 0 0;"><span class="tag tag-accent-2">Merit-Based Scholarship</span></p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3 style="font-size:20px; margin:0 0 14px;">Certifications</h3>
-          <div style="display:flex; flex-wrap:wrap; gap:8px;">
-            <span class="tag tag-neutral">AWS Generative AI Solutions</span>
-            <span class="tag tag-neutral">AWS ML Solutions</span>
-            <span class="tag tag-neutral">AWS Prompt Engineering</span>
-            <span class="tag tag-neutral">Generative AI for Executives</span>
-            <span class="tag tag-neutral">Optimizing Foundation Models</span>
-            <span class="tag tag-neutral">ML A-Z: Python &amp; R</span>
-            <span class="tag tag-neutral">Tableau Essential Training</span>
-            <span class="tag tag-neutral">ISO 50001 Auditor</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" style="padding:0 0 56px;">
-      <span style="display:block; font-size:13px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; color:var(--color-accent-700); margin-bottom:14px;">04 — Contact</span>
-      <div class="contact-patch" style="background:var(--color-accent-2-100); border-radius:56px; padding:44px clamp(24px,4vw,64px); display:grid; gap:28px; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); align-items:center;">
-        <div>
-          <h3 style="font-size:28px; margin:0;">Currently open to</h3>
-          <p style="font-size:16px; line-height:1.6; max-width:52ch; margin:14px 0 0; color:color-mix(in srgb, var(--color-text) 82%, transparent);">Director/Principal roles in Strategy &amp; Operations, Chief of Staff, and Technical Program Management — especially at AI-native companies.</p>
-          <div style="display:flex; gap:13px; flex-wrap:wrap; margin-top:24px;">
-            <a href="mailto:arj.kulshreshtha@yahoo.com" class="btn btn-primary">arj.kulshreshtha@yahoo.com</a>
-          </div>
-        </div>
-        <div style="display:grid; gap:10px; font-size:15px;">
-          <p style="margin:0;"><strong>Phone</strong> · 314.326.9299</p>
-          <p style="margin:0;"><strong>Location</strong> · Pittston, PA</p>
-          <p style="margin:0;"><a href="https://www.linkedin.com/in/arjunkulshreshtha" target="_blank" rel="noopener">linkedin.com/in/arjunkulshreshtha ↗</a></p>
-          <p style="margin:0;"><a href="https://github.com/arjkul" target="_blank" rel="noopener">github.com/arjkul ↗</a></p>
-        </div>
-      </div>
-    </section>
-
-    <footer style="padding:28px 0; font-size:13px; color:color-mix(in srgb, var(--color-text) 65%, transparent); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;">
-      <span>© 2026 Arjun Kulshreshtha</span>
-      <span style="display:flex; gap:16px;"><a href="https://www.linkedin.com/in/arjunkulshreshtha" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/arjkul" target="_blank" rel="noopener">GitHub</a></span>
-    </footer>
-
   </div>
+</nav>
+
+<div class="wrap">
+
+  <section class="hero" id="top">
+    <div>
+      <span class="label hero-eyebrow">Business Strategy &amp; Operations</span>
+      <h1 class="hero-title">Strategy leader who ships<br>what gets built</h1>
+      <p class="hero-dek">I own B2B vertical strategy at ShipMonk and personally build the AI systems that execute it — including a Claude-based multi-agent pipeline behind an 82% merchant chargeback reduction. Earlier: a $99M infrastructure launch and a 10x station scale-up at Amazon.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="link link-primary">Selected work</a>
+        <a href="https://www.linkedin.com/in/arjunkulshreshtha" target="_blank" rel="noopener" class="link">LinkedIn</a>
+        <a href="https://github.com/arjkul" target="_blank" rel="noopener" class="link">GitHub</a>
+        <a href="mailto:arj.kulshreshtha@yahoo.com" class="link">Email</a>
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <img src="assets/img/portrait.jpg" alt="Portrait of Arjun Kulshreshtha">
+    </div>
+  </section>
+
+  <section id="leadership">
+    <span class="label section-num" style="display:block; padding-top:var(--section-gap); margin-bottom:var(--head-gap);">01 — Leadership Approach</span>
+    <p class="manifesto"><strong>Product strategy</strong> grounded in evidence, not intuition. <strong>Operational excellence</strong> that survives contact with a warehouse floor. <strong>AI and automation</strong> built and shipped personally, not commissioned. <strong>Cross-functional leadership</strong> that outlasts the room it started in.</p>
+  </section>
+
+  <section class="kpi-section" aria-label="Career highlights" style="border-top:none;">
+    <div class="kpis">
+      <div><div class="kpi-value"><span class="unit">$</span>20M<span class="unit">+</span></div><div class="kpi-label">Cumulative cost savings</div></div>
+      <div><div class="kpi-value">10<span class="unit">×</span></div><div class="kpi-label">Scale within one year</div></div>
+      <div><div class="kpi-value">82<span class="unit">%</span></div><div class="kpi-label">Chargeback reduction</div></div>
+      <div><div class="kpi-value"><span class="unit">$</span>99M</div><div class="kpi-label">Project launch led</div></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head">
+      <span class="label section-num">02 — Experience</span>
+      <h2 class="section-title">Where I've led</h2>
+    </div>
+    <div class="rows">
+
+      <div class="xp-row row-grid">
+        <div class="xp-meta">
+          <div class="xp-period">2025 — Present<br>Pennsylvania</div>
+          <div class="xp-company">ShipMonk</div>
+          <div class="xp-metric">82% chargeback cut</div>
+        </div>
+        <div>
+          <h3 class="xp-role">Senior Manager — B2B Transformation</h3>
+          <p class="xp-summary">Oversee strategic expansion of B2B e-commerce for SMEs, identifying new revenue streams, scaling infrastructure, and driving the product roadmap across 0–100 initiatives.</p>
+          <div class="xp-bullets">
+            <p>Reduced merchant churn by 35% through stakeholder engagement and product improvements, cutting chargebacks by 82% from Q2 to Q3 2025.</p>
+            <p>Defined and managed the roadmap for a $4M initiative aligning product features with key industry metrics, improving on-time delivery by 8%.</p>
+            <p>Launched an industry-first white-glove onboarding service supporting 100+ SME accounts across 15+ big-box retailers, cutting launch timelines by 15%.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="xp-row row-grid">
+        <div class="xp-meta">
+          <div class="xp-period">2020 — 2025<br>NE &amp; Midwest (IL, MA, CT, NY)</div>
+          <div class="xp-company">Amazon</div>
+          <div class="xp-metric">$99M launch</div>
+        </div>
+        <div>
+          <h3 class="xp-role">Senior Manager — eCommerce &amp; Product Strategy</h3>
+          <p class="xp-summary">Oversaw strategic operations across multiple last-mile delivery stations, led multimillion-dollar infrastructure and expansion projects, and drove automation to reduce defects.</p>
+          <div class="xp-bullets">
+            <p>Led a $99M project launch, onboarding 160+ associates and 400 drivers in 100 days, delivered on time.</p>
+            <p>Increased regional productivity by 10% (13K manhours) in 3 months, generating $4.5M in savings — top 10 nationally in last-mile performance.</p>
+            <p>Scaled a last-mile station from 10K to 100K shipments/day within one year while improving quality metrics by 76% and leading a 21-member management team.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="xp-row row-grid">
+        <div class="xp-meta">
+          <div class="xp-period">2012 — 2019<br>Multiple Cities, India</div>
+          <div class="xp-company">HPCL</div>
+          <div class="xp-metric">$2.5M saved</div>
+        </div>
+        <div>
+          <h3 class="xp-role">Assistant Manager — Supply Chain &amp; Logistics Strategy</h3>
+          <p class="xp-summary">Led large-scale supply chain, logistics, infrastructure, sustainability, and asset-utilization initiatives at one of India's largest public sector energy companies.</p>
+          <div class="xp-bullets">
+            <p>Developed a roadmap to reallocate Renewable Energy Certificates from wind farms, achieving $2.5M in annual savings.</p>
+            <p>Deployed forecasting models that identified bottlenecks and improved downtime accuracy and productivity by 8%.</p>
+            <p>Coordinated 120+ third-party security personnel and local agencies for incident-free operation of a 90-mile gas pipeline over 3 years.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="xp-row row-grid">
+        <div class="xp-meta">
+          <div class="xp-period">2019<br>Consulting Project</div>
+          <div class="xp-company">Nestlé Purina</div>
+        </div>
+        <div>
+          <h3 class="xp-role">Product Consulting Team Lead</h3>
+          <p class="xp-summary">Led a cross-functional team of seven on a six-month product vision engagement, directing market research and delivering data-driven recommendations for the Pet Finder platform.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-head">
+      <span class="label section-num">03 — Technical Projects</span>
+      <h2 class="section-title">What I've been building</h2>
+    </div>
+    <div class="rows">
+
+      <div class="row-grid proj-row">
+        <div class="proj-kind">AI Automation</div>
+        <div>
+          <h3 class="proj-name"><a href="https://github.com/arjkul/multi-agent-merchant-education-pipeline" target="_blank" rel="noopener">Multi-Agent Merchant Education Pipeline</a></h3>
+          <p class="proj-desc">Automates merchant onboarding education with multi-agent orchestration, content personalization, and progress tracking.</p>
+          <div class="proj-stack">Multi-Agent · Education · Claude API</div>
+        </div>
+      </div>
+
+      <div class="row-grid proj-row">
+        <div class="proj-kind">B2B Operations</div>
+        <div>
+          <h3 class="proj-name"><a href="https://github.com/arjkul/warehouse-ops-intelligence" target="_blank" rel="noopener">Warehouse Ops Intelligence</a></h3>
+          <p class="proj-desc">Production BI system surfacing OTRS, OTS, pick/pack audit, and late-order data across 10+ warehouses weekly.</p>
+          <div class="proj-stack">Snowflake · Metabase · SQL</div>
+        </div>
+      </div>
+
+      <div class="row-grid proj-row">
+        <div class="proj-kind">AI Tooling</div>
+        <div>
+          <h3 class="proj-name"><a href="https://github.com/arjkul/b2b-chargeback-rca-framework" target="_blank" rel="noopener">Chargeback RCA Framework</a></h3>
+          <p class="proj-desc">AI-assisted root-cause analysis across Snowflake, PostgreSQL, and EDI compliance data that contributed to an 82% chargeback reduction.</p>
+          <div class="proj-stack">Claude API · EDI · PostgreSQL</div>
+        </div>
+      </div>
+
+      <div class="row-grid proj-row">
+        <div class="proj-kind">AI Toolkit</div>
+        <div>
+          <h3 class="proj-name"><a href="https://github.com/arjkul/llm-daily-drivers" target="_blank" rel="noopener">LLM Daily Drivers</a></h3>
+          <p class="proj-desc">Curated non-technical LLM apps for productivity, creativity, health, and finance, with beginner-friendly setup guides.</p>
+          <div class="proj-stack">AI Agents · LLM Apps · Productivity</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row-grid proj-more">
+      <div class="proj-kind">Also built</div>
+      <ul class="proj-more-list">
+        <li><a href="https://github.com/arjkul/slow-kratos" target="_blank" rel="noopener">slow-kratos</a> — self-hosted AI stack (Ollama, n8n, Docker)</li>
+        <li><a href="https://github.com/arjkul/Claudemeter" target="_blank" rel="noopener">ClaudeMeter</a> — real-time Claude usage monitor for Windows</li>
+        <li><a href="https://github.com/arjkul/merchant-onboarding-analytics" target="_blank" rel="noopener">Merchant Onboarding Analytics</a> — Asana API automation across 200+ merchants</li>
+        <li><a href="https://github.com/arjkul/metabase-sql-playbook" target="_blank" rel="noopener">Metabase SQL Playbook</a> — reusable dashboard pattern library</li>
+        <li><a href="https://github.com/arjkul/b2b-packing-config-generator" target="_blank" rel="noopener">B2B Packing Config Generator</a> — Apps Script packing-config automation</li>
+      </ul>
+    </div>
+
+    <a href="https://github.com/arjkul" target="_blank" rel="noopener" class="link-primary" style="display:inline-block; margin-top:28px; font-size:14.5px; text-decoration:underline; color:var(--color-accent);">View all projects on GitHub ↗</a>
+  </section>
+
+  <section id="stack">
+    <div class="section-head">
+      <span class="label section-num">04 — Skills &amp; Stack</span>
+      <h2 class="section-title">Depth across the stack</h2>
+    </div>
+    <div class="rows">
+      <div class="row-grid skill-row"><span class="skill-domain">Product Management</span><span class="skill-tools">Product Strategy, Roadmap Development, Backlog Prioritization, User Story Creation, Jira, Scrum</span></div>
+      <div class="row-grid skill-row"><span class="skill-domain">AI &amp; Automation</span><span class="skill-tools">Claude Code, Cursor, Gemini CLI, Ollama, n8n, Zapier, AI Studio</span></div>
+      <div class="row-grid skill-row"><span class="skill-domain">Data &amp; Analytics</span><span class="skill-tools">Python, SQL, Power BI, Tableau, Quicksight, Metabase, Advanced Excel</span></div>
+      <div class="row-grid skill-row"><span class="skill-domain">Engineering</span><span class="skill-tools">JavaScript, HTML/CSS, MySQL, REST APIs, VBA, ERP / JDE</span></div>
+      <div class="row-grid skill-row"><span class="skill-domain">Cloud &amp; Infra</span><span class="skill-tools">AWS GenAI, Docker, Tailscale, MCP Gateway, Snowflake</span></div>
+      <div class="row-grid skill-row"><span class="skill-domain">Leadership</span><span class="skill-tools">Cross-Functional Teams, Agile / Kanban, OKRs, Forecasting, Risk Management</span></div>
+    </div>
+
+    <div class="cred-cols">
+      <div>
+        <div class="cred-h">Education</div>
+        <div class="edu-entry">
+          <div>
+            <div class="edu-degree">MBA</div>
+            <div class="edu-school">Washington University · Merit-Based Scholarship Recipient</div>
+          </div>
+        </div>
+        <div class="edu-entry">
+          <div>
+            <div class="edu-degree">B.S. Electronics &amp; Communications Engineering</div>
+            <div class="edu-school">Allahabad University · Merit-Based Scholarship Recipient</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="cred-h">Certifications</div>
+        <ul class="cert-list">
+          <li>AWS Generative AI Solutions</li>
+          <li>AWS ML Solutions</li>
+          <li>AWS Prompt Engineering</li>
+          <li>Generative AI for Executives</li>
+          <li>Optimizing Foundation Models</li>
+          <li>ML A-Z: Python &amp; R</li>
+          <li>Tableau Essential Training</li>
+          <li>ISO 50001 Auditor</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
 </div>
+
+<section id="contact" class="contact-band">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <span class="label label-inverse" style="display:block; margin-bottom:18px;">05 — Contact</span>
+        <h2 class="contact-title">Currently open to</h2>
+        <p class="contact-dek">Director/Principal roles in Strategy &amp; Operations, Chief of Staff, and Technical Program Management — especially at AI-native companies.</p>
+        <p style="margin-top:26px;"><a href="mailto:arj.kulshreshtha@yahoo.com" class="link-inverse-primary">arj.kulshreshtha@yahoo.com</a></p>
+      </div>
+      <div class="contact-details">
+        <p>314.326.9299</p>
+        <p>Pittston, PA</p>
+        <p><a class="link-inverse" href="https://www.linkedin.com/in/arjunkulshreshtha" target="_blank" rel="noopener">linkedin.com/in/arjunkulshreshtha</a></p>
+        <p><a class="link-inverse" href="https://github.com/arjkul" target="_blank" rel="noopener">github.com/arjkul</a></p>
+      </div>
+    </div>
+    <div class="footer-inner">
+      <span>Arjun Kulshreshtha · © 2026</span>
+      <span class="footer-links"><a href="https://www.linkedin.com/in/arjunkulshreshtha" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/arjkul" target="_blank" rel="noopener">GitHub</a></span>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', function () {
+    nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  }, { passive: true });
+})();
+</script>
 </body>
 </html>
